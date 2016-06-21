@@ -3,7 +3,7 @@ function play(x){
   var randI = Math.floor(Math.random() * choices.length)
   var compChoice = choices[randI]
   document.getElementById('rpsls').innerHTML = compChoice;
-  if(x!=compChoice){console.log(x); console.log(compChoice)
+  if(x!=compChoice){
     if(compChoice===choices[2]|| compChoice===choices[3] && x===choices[0]) {
       alert('you won')
     } else if((compChoice===choices[0] || compChoice===choices[4])&& x===choices[1]) {
